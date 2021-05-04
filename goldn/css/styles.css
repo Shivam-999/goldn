@@ -1,0 +1,30 @@
+.gap{
+   margin-right: 20px;
+ }
+ .up{
+   margin-top: 2px;
+ }
+ .white{
+    color: white;
+ }
+ .white:hover{
+    color:lightgray
+ }
+.sub-footer  {
+	background:#363636;
+   padding:30px;
+   color: floralwhite;
+   text-align: center;
+}
+
+
+
+.mobile{
+  margin-left: -1cm;
+}
+
+
+.link-color{
+color:white;
+}
+/*------------------------------------------------------*/
