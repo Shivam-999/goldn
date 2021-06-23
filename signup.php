@@ -45,7 +45,7 @@ include 'dbconnect.php';
 
   <style type="text/css">
     body {
-      background-color: lightgray;
+      background-color: white;
     }
 
     .shape {
@@ -65,7 +65,7 @@ include 'dbconnect.php';
     .signup-form form {
       border-radius: 5px;
       margin-bottom: 5px;
-      background: dimgray;
+      background:blueviolet;
       box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.7);
       padding: 20px;
     }
@@ -119,19 +119,11 @@ include 'dbconnect.php';
           <li class="nav-item active">
             <a class="nav-link" href="index.html">How Does it Work? <span class="sr-only">(current)</span></a>
           </li>
-           <li class="nav-item active">
-            <a class="nav-link" href="#">Who are we? <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-           <a class="nav-link" href="update.html">Updates <span class="sr-only">(current)</span></a>
-         </li>
+
          <li class="nav-item active">
           <a class="nav-link" href="contribute.php">Contribute Now! <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item active">
-         <a class="nav-link" href="signup.php">Sign up <span class="sr-only">(current)</span></a>
-       </li>
-
+      
         </ul>
       </div>
 
@@ -144,7 +136,7 @@ include 'dbconnect.php';
     <form action="signup.php" method="post">
 
       <div class="modal-header">
-      <h1 class="">  GOLDN BYRD</h1>
+      <h1 class="" style="margin-left:10%;">GOLDN BYRD</h1>
         </div>
 
       <h3>Create an Account</h3>

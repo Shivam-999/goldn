@@ -12,17 +12,19 @@
  }
 .sub-footer  {
 	background:#363636;
-   padding:30px;
+   padding-top:30px;
    color: floralwhite;
    text-align: center;
 }
-
-
 
 .mobile{
   margin-left: -1cm;
 }
 
+.form-group{
+  padding: 5px;
+  width: 80%;
+}
 
 .link-color{
 color:white;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 03, 2021 at 03:37 PM
+-- Generation Time: Jun 23, 2021 at 09:49 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -20,6 +20,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `goldn`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE `register` (
+  `sno` int(255) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `contact` varchar(200) NOT NULL,
+  `username` varchar(200) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `yes` varchar(30) NOT NULL,
+  `contri` varchar(50) NOT NULL,
+  `choice` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`sno`, `name`, `contact`, `username`, `email`, `yes`, `contri`, `choice`) VALUES
+(1, 'evs', '876543', 'fewae', 'shivam125678@gmail.com', 'female', '', ''),
+(2, 'Shivam Jain', '8765', 'shivam', 'shivam125678@gmail.com', 'female', '123', 'Weekly'),
+(3, 'Shivam Jain', '76543', 'asdfg', 'shivam125678@gmail.com', '', '12', 'Select'),
+(4, 'Shivam Jain', '76543', 'asd', 'shivam125678@gmail.com', '', '13', ''),
+(5, 'Shivam Jain', '543', 'sdd', 'shivam125678@gmail.com', '', '12', ''),
+(6, 'sadc', '54', 'dcs', 'shivam125678@gmail.com', '', '12', 'Monthly');
 
 -- --------------------------------------------------------
 
@@ -42,11 +71,18 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`sno`, `name`, `contact`, `username`, `email`, `password`, `confirm_password`) VALUES
-(1, 'Shivam', '999033', 'shiv', 'shiv@gmail.com', 'shiv9112', 'shiv9112');
+(1, 'Shivam', '999033', 'Shivam', 'shiv@gmail.com', 'shiv@9112', 'shiv9112'),
+(2, 'Shivam Jain', '123456', 'Shivam Jain', 'shivam125678@gmail.com', 'shiv', 'shiv');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `register`
+--
+ALTER TABLE `register`
+  ADD PRIMARY KEY (`sno`);
 
 --
 -- Indexes for table `users`
@@ -59,10 +95,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `register`
+--
+ALTER TABLE `register`
+  MODIFY `sno` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `sno` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `sno` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
